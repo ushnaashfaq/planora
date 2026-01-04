@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Planora | Learn & Play</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Learn & Play</h1>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="weekly.html">Weekly Planner</a>
+    <a href="curriculum.html">Curriculum</a>
+    <a href="learn.html">Learn & Play</a>
+</nav>
+
+<!-- ===================== -->
+<!-- QUICK QUIZ SECTION -->
+<!-- ===================== -->
+<section class="card">
+    <h2>Quick Quiz</h2>
+
+    <!-- This will later be dynamic -->
+    <p id="quizQuestion">What is the capital of France?</p>
+
+    <div id="quizOptions">
+        <button onclick="checkAnswer('Paris')">Paris</button>
+        <button onclick="checkAnswer('London')">London</button>
+    </div>
+
+    <p id="quizResult"></p>
+</section>
+
+<!-- ================================= -->
+<!-- EXTRA CURRICULAR ACTIVITIES -->
+<!-- ================================= -->
+<section class="card">
+    <h2>Extra-Curricular Activities</h2>
+
+    <p>Are you active in any extra-curricular activities?</p>
+
+    <label>
+        <input type="radio" name="activity" value="yes" onclick="showActivitySection(true)">
+        Yes
+    </label>
+
+    <label>
+        <input type="radio" name="activity" value="no" onclick="showActivitySection(false)">
+        No
+    </label>
+
+    <div id="activitySection" style="display: none; margin-top: 15px;">
+
+        <label>Describe your activity:</label><br>
+        <input type="text" id="activityText"
+               placeholder="e.g. Drawing, Basketball, Cricket"><br><br>
+
+        <label>Upload image or video:</label><br>
+        <input type="file"
+               id="activityMedia"
+               accept="image/*,video/*"
+               onchange="previewMedia()"><br><br>
+
+        <div id="mediaPreview"></div>
+
+    </div>
+</section>
+
+<!-- ===================== -->
+<!-- MINI GAME SECTION -->
+<!-- ===================== -->
+<section class="card">
+    <h2>Mini Game</h2>
+    <p>🎮 Focus Timer Challenge (Coming Soon)</p>
+</section>
+
+<!-- JS FILE -->
+<script src="script.js"></script>
+
+</body>
+</html>
