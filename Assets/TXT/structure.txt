@@ -1,7 +1,0 @@
-Planora Website:
-- index.html        -> Home page (Daily Timeline, Progress bar, Motivational quote, Reminders)
-- weekly.html       -> Weekly Planner + Work Logger
-- curriculum.html   -> Curriculum Builder + Auto planner + Color Picker + Goals
-- learn.html        -> Quizzes + Mini game + Extracurricular activities
-- style.css         -> Shared CSS styling for all pages
-- script.js         -> Shared JS for functionality (progress bars, quotes, planner auto-generate)
